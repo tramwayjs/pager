@@ -10,12 +10,12 @@ export default class Pager {
     }
 
     setPageSize(pageSize) {
-        this.pageSize = parseInt(pageSize);
+        this.pageSize = parseInt(pageSize || this.pageSize);
         return this;
     }
 
     setCurrentPage(page) {
-        this.page = parseInt(page);
+        this.page = parseInt(page || this.page);
         return this;
     }
 
