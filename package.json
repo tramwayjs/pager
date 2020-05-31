@@ -1,6 +1,6 @@
 {
   "name": "@tramwayjs/pager",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple pager to handle pagination in the Tramway framework",
   "author": "Julian Wolfe",
   "license": "MIT",
