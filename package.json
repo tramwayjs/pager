@@ -1,0 +1,32 @@
+{
+  "name": "@tramwayjs/pager",
+  "version": "0.1.0",
+  "description": "A simple pager to handle pagination in the Tramway framework",
+  "author": "Julian Wolfe",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tramwayjs/pager.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tramwayjs/pager/issues"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "prepublish": "npm run compile",
+    "compile": "./node_modules/.bin/tramway build",
+    "test": "npm run compile && mocha tests"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.10.1",
+    "@babel/plugin-transform-flow-strip-types": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "mocha": "^7.2.0",
+    "tramway": "^0.5.1",
+    "tramway-core-testsuite": "^1.2.0"
+  },
+  "peerDependencies": {
+    "tramway-core-connection": "^2.2.0"
+  }
+}
